@@ -609,5 +609,43 @@ ul.social-links li.mail-link {
   text-decoration: underline;
 }
 
+/*FOOTER*/
+.site-footer {
+  background-color: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
 
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.footer-socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-socials li a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer-socials li a:hover {
+  color: #bb3d02;
+  text-decoration: underline;
+}
 
