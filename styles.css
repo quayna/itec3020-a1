@@ -390,7 +390,6 @@ h1 {
 
 .about-text {
   grid-column: 2; 
-  max-width: 1200px;
 }
 
 .prose p{
@@ -457,5 +456,87 @@ ul.social-links li.mail-link {
   margin-top: 2rem;
   border-top: 1px solid #e5e7eb; 
 }
+
+/*CONTACT PAGE*/
+/*Contact Section*/
+.contact-container {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border: 1px solid #f4f4f5;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-heading {
+  font-size: 1.75rem; /* ~28px */
+  text-align: center;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d4d4d8; /* neutral-300 */
+  border-radius: 0.75rem;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submit-btn {
+  background-color: #1c1e22;
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #333333;
+}
+
+/*Socials Section*/
+.socials-contact {
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.socials-contact a {
+  font-size: 1.75em;
+  color: #555;
+  transition: color 0.3s;
+}
+ 
+
 
 
