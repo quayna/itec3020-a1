@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Load saved theme on page load
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
     const icon = toggle.querySelector("i");

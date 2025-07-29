@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building a Dynamic Blog Section</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="content-area">
+      <!--HEADER -->
+      <div id="header"></div>
+
+      <!--HOME (HEADSHOT)-->
+      <section class="intro-section">
+        <div class="headshot">
+          <a href="index.html">
+            <img src="/images/headshot.webp" alt="quayna busacay profile" />
+          </a>
+        </div>
+      </section>
+
+      <article class="article" style="max-width: 700px; margin: 2rem auto">
+        <h1>Building a Dynamic Blog Section</h1>
+        <p><em>Published on July 28, 2025</em></p>
+        <p>
+          I made my blog load posts dynamically from a JSON file using
+          JavaScript. This makes it easier to manage and update content without
+          editing the HTML directly.
+        </p>
+        <p>
+          For Part Two, I created a <code>posts.json</code> file to store my
+          blog entries and used JavaScript's <code>fetch()</code> API to load
+          them dynamically. When the blog page loads, JavaScript fetches the
+          JSON, creates DOM elements for each post, and inserts them into the
+          page. This way, I can add or edit blog posts by just updating the JSON
+          file. I styled the blog posts to match the rest of the portfolio
+          layout.
+        </p>
+      </article>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

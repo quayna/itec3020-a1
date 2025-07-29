@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implementing a Light/Dark Mode Switcher</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="content-area">
+      <!--HEADER -->
+      <div id="header"></div>
+
+      <!--HOME (HEADSHOT)-->
+      <section class="intro-section">
+        <div class="headshot">
+          <a href="index.html">
+            <img src="/images/headshot.webp" alt="quayna busacay profile" />
+          </a>
+        </div>
+      </section>
+
+      <div class="content-area">
+        <article class="article" style="max-width: 700px; margin: 2rem auto">
+          <h1>Implementing a Light/Dark Mode Switcher</h1>
+          <p><em>Published on July 20, 2025</em></p>
+          <p>
+            I added a theme toggle that lets users switch between light and dark
+            mode. Here’s how I set it up, including handling icons and saving
+            the preference for future visits.
+          </p>
+          <p>
+            For Part One, I created a light/dark mode switcher using JavaScript.
+            The button toggles a <code>dark-mode</code> class on the
+            <code>body</code>, which changes the background, text, and icon
+            colors. I also used <code>localStorage</code> to remember the user's
+            preference, so the site opens in their chosen mode next time. The
+            toggle icon updates in real time, making the theme switch feel
+            smooth and intuitive.
+          </p>
+        </article>
+      </div>
+    </div>
+    <div id="footer"></div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
