@@ -1,0 +1,14 @@
+[
+  {
+    "title": "My First Blog Post",
+    "date": "2025-07-29",
+    "excerpt": "This is a short summary of my first post. It’s about web development.",
+    "url": "posts/first-post.html"
+  },
+  {
+    "title": "Learning JavaScript",
+    "date": "2025-07-28",
+    "excerpt": "JavaScript is a powerful language that allows dynamic behavior on web pages.",
+    "url": "posts/learning-js.html"
+  }
+]

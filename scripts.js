@@ -27,3 +27,29 @@ document.addEventListener("DOMContentLoaded", () => {
     icon.classList.add("fa-sun");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const blogList = document.getElementById("blog-list");
+  fetch("posts.json")
+    .then((response) => response.json())
+    .then((posts) => {
+      posts.forEach((post) => {
+        const postElement = document.createElement("div");
+        postElement.classList.add("article");
+
+        postElement.innerHTML = `
+          <div class="blog-post-header">
+    <span class="blog-date">${post.date}</span>
+    <div class="blog-content">
+      <h2 class="blog-title"><a href="${post.url}">${post.title}</a></h2>
+      <p class="excerpt">${post.excerpt}</p>
+      <a href="${post.url}" class="read-more">Read More →</a>
+    </div>
+  </div>
+        `;
+
+        blogList.appendChild(postElement);
+      });
+    })
+    .catch((error) => console.error("Error loading blog posts:", error));
+});
