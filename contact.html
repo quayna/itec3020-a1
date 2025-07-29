@@ -24,80 +24,94 @@
     <title>Contact</title>
   </head>
   <body>
-    <!--NAVIGATION BAR-->
-    <nav>
-      <a href="about.html">About</a>
-      <a href="blog.html">Articles</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <a href="resume.html">Resume</a>
-    </nav>
+    <div class="content-area">
+      <!--NAVIGATION BAR-->
+      <nav>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="blog.html">Articles</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="resume.html">Resume</a>
+        </div>
 
-    <!--HOME (HEADSHOT)-->
-    <section class="intro-section">
-      <div class="headshot">
-        <a href="index.html">
-          <img src="/images/headshot.webp" alt="quayna busacay profile" />
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+      </nav>
+
+      <!--HOME (HEADSHOT)-->
+      <section class="intro-section">
+        <div class="headshot">
+          <a href="index.html">
+            <img src="/images/headshot.webp" alt="quayna busacay profile" />
+          </a>
+        </div>
+      </section>
+
+      <!--Contact Container-->
+      <section class="contact-container">
+        <h2 class="contact-heading">Get in Touch</h2>
+        <form
+          action="https://formspree.io/f/your-form-id"
+          method="POST"
+          class="contact-form"
+        >
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </section>
+
+      <div class="socials-contact">
+        <a
+          href="https://github.com/quayna"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/quayna"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"
+          ><i class="https://www.linkedin.com/in/quayna"></i>
         </a>
       </div>
-    </section>
-
-    <!--Contact Container-->
-    <section class="contact-container">
-      <h2 class="contact-heading">Get in Touch</h2>
-      <form
-        action="https://formspree.io/f/your-form-id"
-        method="POST"
-        class="contact-form"
-      >
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="_replyto" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </section>
-
-    <div class="socials-contact">
-      <a
-        href="https://github.com/quayna"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><i class="fa-brands fa-github"></i>
-      </a>
-
-      <a
-        href="https://www.instagram.com/quayna"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"
-        ><i class="https://www.linkedin.com/in/quayna"></i>
-      </a>
     </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Quayna Busacay. All rights reserved.</p>
+        <ul class="footer-socials">
+          <li>
+            <a href="https://github.com/quayna" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/quayna" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/quayna" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li><a href="mailto:quayna.bscy@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="mode.js"></script>
   </body>
-
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Quayna Busacay. All rights reserved.</p>
-      <ul class="footer-socials">
-        <li>
-          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/yourusername" target="_blank"
-            >LinkedIn</a
-          >
-        </li>
-        <li><a href="mailto:youremail@example.com">Email</a></li>
-      </ul>
-    </div>
-  </footer>
 </html>
