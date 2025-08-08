@@ -7,7 +7,7 @@
   <body>
     <!--NAVIGATION BAR-->
     <nav>
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
         <a href="about.html">About</a>
         <a href="blog.html">Articles</a>
         <a href="projects.html">Projects</a>
@@ -15,9 +15,22 @@
         <a href="resume.html">Resume</a>
       </div>
 
-      <button id="theme-toggle" aria-label="Toggle dark mode">
-        <i class="fa-regular fa-moon"></i>
-      </button>
+      <!--DROPDOWN MENU-->
+      <div class="nav-buttons">
+        <button
+          class="dropdown"
+          id="dropdown"
+          aria-label="Toggle dropdown menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+      </div>
     </nav>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
